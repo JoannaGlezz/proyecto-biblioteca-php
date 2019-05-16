@@ -18,7 +18,7 @@ if ($filas->num_rows === 0) {
     exit();
 }
 $fila = $filas->fetch_assoc();
-echo "<form name='f1' action='updateLibro.php?id=" . $fila["id_libro"] . "' method='post'>";
+echo "<form name='f1' action='../backend/updateLibro.php?id=" . $fila["id_libro"] . "' method='post'>";
 echo "<table><tr>";
 
 echo "<td>ID</td>";

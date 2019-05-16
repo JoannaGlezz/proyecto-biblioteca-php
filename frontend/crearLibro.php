@@ -1,6 +1,6 @@
 <?php
 
-        echo "<form  action='insertarlb.php' method='post'>";
+        echo "<form  action='../backend/insertarlb.php' method='post'>";
         echo "<h2>Agregar un libro nuevo</h2>";
 
         echo "<table><tr>";
@@ -27,7 +27,7 @@
         echo "<br>";
         
         echo "<button type='submit'>Agregar Libro</button>";
-        echo "<button><a href='consultaLibros.php'>Regresar</a></button>";
+        echo "<button><a href='./consultaLibros.php'>Regresar</a></button>";
 
         echo "</form>";
 

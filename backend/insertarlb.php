@@ -16,7 +16,7 @@
             
             $sql = "INSERT INTO libro VALUES ('0', '$titulo', '$isbn', '$autores', '$categoria', '$editorial', '$stock')";
 
-            echo "<button><a href='consultaLibros.php'>Regresar</a></button>";
+            echo "<button><a href='../frontend/consultaLibros.php'>Regresar</a></button>";
 
 
             if($conn -> query($sql) === TRUE) {

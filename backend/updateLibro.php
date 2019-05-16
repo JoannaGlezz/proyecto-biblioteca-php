@@ -29,7 +29,7 @@ $conn->query("SET NAMES utf8"); //CODIFICACION PARA CARACTERES ESPECIALES
     } else {
         echo "Oops, algo salió mal" . mysqli_error($conn);
     }
-    echo "<button type='submit'><a href='consultaLibros.php'>Regresar</a></button>";
+    echo "<button type='submit'><a href='../frontend/consultaLibros.php'>Regresar</a></button>";
 
     mysqli_close($conn);
 

@@ -5,7 +5,7 @@ $conn= new mysqli ("192.168.64.2", "joanna", "yaya@2424", "bibliotecaCompleto");
 // $sql="DELETE FROM libros WHERE id_libros=69";
 $sql="DELETE FROM libro WHERE id_libro=".$_GET['id'];
 
-echo "<button><a href='consultaLibros.php'>Regresar</a></button>";
+echo "<button><a href='../frontend/consultaLibros.php'>Regresar</a></button>";
 echo "<br>";
 
 
