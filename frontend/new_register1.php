@@ -23,7 +23,7 @@
 
     <form class="forms" method="post" action="../backend/register_link.php">
 
-        <h3 class="titulo_secundario">Nuevo registro</h3>
+        <h1 class="titulo_secundario">Nuevo registro</h1>
 
         <label>Ingresa Matricula:</label>
         <br>

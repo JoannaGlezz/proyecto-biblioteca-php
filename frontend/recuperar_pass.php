@@ -13,12 +13,12 @@
 
     <form class="forms" method="post" action="../backend/reestablecer.php">
 
-        <h3 class="titulo_secundario">Recuperacion de password</h3>
+        <h1 class="titulo_secundario">Recuperacion de password</h1>
 
         <label>Ingresa Matricula: </label>
         <input name="value_matricula" type="text" placeholder="Matricula"><br>
         <br>
-        <button type="submit"><a href='./msj_recup.php'>Enviar</a></button>
+        <button type="submit"><a href='../backend/reestablecer.php'>Enviar</a></button>
 
     </form>
 
