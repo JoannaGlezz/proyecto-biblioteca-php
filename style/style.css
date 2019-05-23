@@ -1,0 +1,48 @@
+.titulo_principal{
+    font-family: Arial, Helvetica, sans-serif;
+    color: navy;
+    text-align: center;
+}
+
+.titulo_secundario{
+    font-family: Arial, Helvetica, sans-serif;
+    color: royalblue;
+    text-align: center;
+}
+
+.menu_inicial{
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    text-align: center;
+}
+
+body{
+    background-image: url(./images/restaurant.png)
+}
+
+.forms{
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    text-align: center;
+}
+
+.avisos{
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    text-align: center;
+}
+
+button{
+        font-size:13px;
+        font-family:Verdana,Helvetica;
+        font-weight:bold;
+        background: white;
+        border:0px;
+        width:120px;
+        height:40px;
+       }
+
+input{
+    width:150px;
+    height:30px;
+}

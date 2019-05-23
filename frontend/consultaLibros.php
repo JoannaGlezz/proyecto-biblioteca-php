@@ -2,13 +2,15 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
+
 
     <?php
     $conn = new mysqli("192.168.64.2", "joanna", "yaya@2424", "bibliotecaCompleto");
@@ -18,7 +20,7 @@
     if ($conn->connect_error) {
         die('Oops! Algo fallo..' . $conn->connect_error);
     }
-    
+
     $varSele = "SELECT * FROM libro";
     $varFilas = $conn->query($varSele);
 
@@ -30,7 +32,7 @@
             echo "<td>" . $fila["id_libro"] . "</td>";
             echo "<td><a href='./detalleslb.php?id=" . $fila["id_libro"] . "'>" . $fila["titulo"] . "</a></td>";
             echo "<td><a href='../backend/eliminarlb.php?id=" . $fila["id_libro"] . "'>Eliminar </a>" . "</td>";
-            echo "<td><a href='./editarLibro.php?id=" . $fila["id_libro"] . "'>Modificar </a>" . "</td>";
+            echo "<td><a href='./editarLibro.php?id=" . $fila["id_libro"] . "'>Editar </a>" . "</td>";
             echo "</tr>";
         }
 
@@ -42,6 +44,7 @@
     }
 
     ?>
+
 
 </body>
 

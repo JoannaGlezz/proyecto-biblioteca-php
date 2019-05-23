@@ -24,13 +24,13 @@ $conn->query("SET NAMES utf8"); //CODIFICACION PARA CARACTERES ESPECIALES
     $sql .= "stock='" . $stock . "' ";
     $sql .= " WHERE id_libro = " . $idLibro;
 
-    if ($conn->query($sql) === true) {
+    echo "<button ><a href='../frontend/consultaLibros.php'>Regresar</a></button>";
+    echo "<br>";
+
+    if ($conn->query($sql)){
         echo "Registro modifcado satisfactoriamente";
     } else {
         echo "Oops, algo salió mal" . mysqli_error($conn);
     }
-    echo "<button type='submit'><a href='../frontend/consultaLibros.php'>Regresar</a></button>";
 
     mysqli_close($conn);
-
-?>
