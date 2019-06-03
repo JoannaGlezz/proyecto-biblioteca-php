@@ -16,10 +16,9 @@
     text-align: center;
 }
 
-/* body{
+body{
     background-image: url(images/restaurant.png);
-    opacity: 0.9;
-} */
+}
 
 .forms{
     font-family: Arial, Helvetica, sans-serif;

@@ -11,14 +11,14 @@
 
 <body>
 
-    <form class="forms" method="post" action="../backend/reestablecer.php">
+    <form class="forms" action="../backend/reestablecer.php" method="post">
 
         <h1 class="titulo_secundario">Recuperacion de password</h1>
 
         <label>Ingresa Matricula: </label>
-        <input name="value_matricula" type="text" placeholder="Matricula"><br>
+        <input type="text" name="matricula" placeholder="Matricula"><br>
         <br>
-        <button type="submit"><a href='../backend/reestablecer.php'>Enviar</a></button>
+        <button type="submit">Enviar</button>
 
     </form>
 
