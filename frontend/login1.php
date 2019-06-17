@@ -9,7 +9,9 @@
     <title>Login</title>
 </head>
 
-<body>
+
+
+<body style="background-image: url(../style/images/pattern.png)">
 
     <?php
     $conn = new mysqli("192.168.64.2", "joanna", "yaya@2424", "bibliotecaCompleto");
@@ -28,25 +30,31 @@
             <label>User:</label>
             <input name="usuario" type="text" placeholder="nombre de usuario">
         </div>
-        <br>
+            <br>
         <div>
             <label>Pass:</label>
             <input name="pass" type="password" placeholder="password">
         </div>
         <br>
-        <button type="submit">Ingresar</button>
 
-        <br>
+        <button type="submit" style="background-color: grey">Ingresar</button>
 
         <div>
-        <h4><a href="./new_register1.php">Sin usuario? Voy a registrarme</h4>
+            <h5>
+                <a href="./new_register1.php">Voy a registrarme
+            </h5>
 
-        <h4><a href="./recuperar_pass.php">Olvide mi contraseña</h4>
-    </div>
+            <h5>
+                <a href="./recuperar_pass.php">Olvide mi contraseña
+            </h5>
+        </div>
+
+        <div>
+            <button style="background-color: grey">
+            <a href='inicio.php'>Regresar</a></button>
+        </div>
 
     </form>
-
-    
 
 </body>
 

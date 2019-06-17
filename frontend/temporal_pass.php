@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body style="background-image: url(../style/images/pattern.png)">
 
     <form class="forms" method="post" action='../backend/temporalPass.php'>
 
@@ -28,7 +28,7 @@
         </label><br>
         <br>
 
-        <button><a href='../backend/update_pass.php'>Enviar</a></button>
+        <button style="background-color: grey"><a href='../backend/update_pass.php'>Enviar</a></button>
     </form>
 
 </body>

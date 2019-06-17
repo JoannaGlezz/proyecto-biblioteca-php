@@ -9,12 +9,12 @@
     <title>Nuevo Registro</title>
 </head>
 
-<body>
+<body style="background-image: url(../style/images/pattern.png)">
 
     <div class="avisos">
         <h3 class="titulo_secundario">Un email ha sido enviado al correo registrado para completar tu registro</h3>
         <br>
-        <button><a href='./login1.php'>Aceptar</a></button>
+        <button style="background-color: grey"><a href='./login1.php'>Aceptar</a></button>
     </div>
 
 </body>

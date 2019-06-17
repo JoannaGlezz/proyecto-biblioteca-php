@@ -9,7 +9,7 @@
     <title>Editar Libro</title>
 </head>
 
-<body>
+<body style="background-image: url(../style/images/pattern.png)">
 
     <?php
     if (!isset($_GET["id"])) {
@@ -60,7 +60,7 @@ if ($filas->num_rows === 0) {
     echo "</table>";
     echo "<br>";
 
-    echo "<button type='submit'>Continuar</button>";
+    echo "<button type='submit' style='background-color: grey'>Continuar</button>";
 
     echo "</form>";
 

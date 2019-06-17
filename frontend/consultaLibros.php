@@ -9,7 +9,7 @@
     <title>Consulta General Libros</title>
 </head>
 
-<body>
+<body style="background-image: url(../style/images/pattern.png)">
 
 
     <?php
@@ -21,19 +21,19 @@
         die('Oops! Algo fallo..' . $conn->connect_error);
     }
 
-    $varSele = "SELECT * FROM libro";
-    $varFilas = $conn->query($varSele);
+    $selector = "SELECT * FROM libro";
+    $filas = $conn->query($selector);
 
     
 
-    if ($varFilas->num_rows > 0) {
+    if ($filas->num_rows > 0) {
         echo "<table>";
         echo "<tr><td> Id </td> <td> Titulo </td> <td> Acciones </td></tr>";
 
-        while ($fila = $varFilas->fetch_assoc()) {
+        while ($fila = $filas->fetch_assoc()) {
             echo "<tr>";
             echo "<td>".$fila["id_libro"]."</td>";
-            echo "<td><a href='./detalleslb.php?id=".$fila["id_libro"]."'>".$fila["titulo"]."</a></td>";
+            echo "<td><a href='./detallesLb.php?id=".$fila["id_libro"]."'>".$fila["titulo"]."</a></td>";
             echo "<td><a href='../backend/eliminarlb.php?id=".$fila["id_libro"]."'>Eliminar </a>"."</td>";
             echo "<td><a href='./editarLibro.php?id=".$fila["id_libro"]."'>Editar </a>"."</td>";
             echo "</tr>";
@@ -41,7 +41,7 @@
 
         echo "</table>";
 
-        echo "<button><a href='./crearLibro.php'>Agregar Nuevo</a></button>";
+        // echo "<button><a href='./crearLibro.php'>Agregar Nuevo</a></button>";
         echo "<button><a href='./inicio.php'>Volver a inicio</a></button>";
 
     } else {

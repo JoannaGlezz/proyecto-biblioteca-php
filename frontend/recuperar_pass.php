@@ -9,7 +9,7 @@
     <title>Recuperacion de cuenta</title>
 </head>
 
-<body>
+<body style="background-image: url(../style/images/pattern.png)">
 
     <form class="forms" action="../backend/reestablecer.php" method="post">
 
@@ -18,7 +18,7 @@
         <label>Ingresa Matricula: </label>
         <input type="text" name="matricula" placeholder="Matricula"><br>
         <br>
-        <button type="submit">Enviar</button>
+        <button style="background-color: grey" type="submit">Enviar</button>
 
     </form>
 

@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="style.css">
         <title>Document</title>
 </head>
-<body>
+<body style="background-image: url(../style/images/pattern.png)">
 
 <?php
         echo "<form  action='../backend/insertarlb.php' method='post'>";
@@ -37,7 +37,7 @@
         echo "<br>";
         
         echo "<button type='submit'>Agregar Libro</button>";
-        echo "<button><a href='./consultaLibros.php'>Regresar</a></button>";
+        echo "<button style='background-color: grey'><a href='./consultaLibros.php'>Regresar</a></button>";
 
         echo "</form>";
 

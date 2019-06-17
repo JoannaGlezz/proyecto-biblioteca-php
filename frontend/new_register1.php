@@ -9,7 +9,7 @@
     <title>Registro Nuevo</title>
 </head>
 
-<body>
+<body style="background-image: url(../style/images/pattern.png)">
 
     <?php
     $conn = new mysqli("192.168.64.2", "joanna", "yaya@2424", "bibliotecaCompleto");
@@ -30,7 +30,7 @@
         <input name="toma_matricula" type="text" placeholder="Matricula">
         <br>
         <br>
-        <button><a href='./new_reg.php'>Enviar</a></button>
+        <button style="background-color: grey"><a href='./new_reg.php'>Enviar</a></button>
 
     </form>
 

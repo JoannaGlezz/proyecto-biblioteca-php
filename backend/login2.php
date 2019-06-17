@@ -5,6 +5,7 @@ $conn = new mysqli("192.168.64.2", "joanna", "yaya@2424", "bibliotecaCompleto");
 $conn->query("SET NAMES utf8");
 
 if ($conn->connect_error) {
+    
     die("Algo fallo en la conexion!".$conn->connect_error);
 }
 

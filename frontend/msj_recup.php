@@ -14,7 +14,7 @@
         <h3 class="titulo_secundario">Un email ha sido enviado al correo registrado para recuperar tu cuenta</h3>
         <br>
         <button><a href='./temporal_pass.php'>Recuperar contraseña</a></button>
-        <button><a href='./login1.php'>Regresar</a></button>
+        <button style="background-color: grey"><a href='./login1.php'>Regresar</a></button>
     </div>
 
 </body>
