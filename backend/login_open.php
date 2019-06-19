@@ -1,3 +1,4 @@
+<body style="background-image: url(../style/images/pattern.png)">
 <?php
 
 session_start();
@@ -22,12 +23,13 @@ $result3 = $conn->query($sql3);
 $fila3 = $result3 ->fetch_assoc();
 $_SESSION["usuario"] =$fila3["user_name"];
 
-echo "<h4> Hola  ".$_SESSION["uss"]."</h4>";
-echo "<h> Sesion iniciada con el usuario : ".$_SESSION["uss"]."</h4>";
+// echo "<h4 class='titulo_secundario'> Hola  ".$_SESSION["uss"]."</h4>";
+echo "<h4 class='titulo_secundario'> Sesion iniciada con el usuario : ".$_SESSION["uss"]."</h4>";
 echo "<h4> Fecha: ".$_SESSION["inicio-dia"]."</h4>";
 echo "<h4> Hora: ".$_SESSION["inicio-hora"]."</h4>";
-echo "<h4> Sesion completa de: ".$_SESSION["uss"]."</h4>";
+// echo "<h4> Sesion completa de: ".$_SESSION["uss"]."</h4>";
 
-echo "<button><a  href='./login_close.php'>Finalizar Sesion</a></button>";
+// echo "<button><a  href='./login_close.php'>Finalizar Sesion</a></button>";
 
 ?>
+</body>

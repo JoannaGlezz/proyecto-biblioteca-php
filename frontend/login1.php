@@ -51,7 +51,7 @@
 
         <div>
             <button style="background-color: grey">
-            <a href='inicio.php'>Regresar</a></button>
+            <a href='admin_usuarios.php'>Regresar</a></button>
         </div>
 
     </form>
